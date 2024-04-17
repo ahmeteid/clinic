@@ -27,8 +27,9 @@
     background-color: var(--background-color);
     text-transform: capitalize;
     font-size: 1rem;
+    text-align: center;
     font-weight: 400;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -105,10 +106,18 @@ nav .list-content ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    nav .list-content ul {
+        display: none;
+    }
 }
 
 nav .list-content ul li a {
     padding: 5px 15px;
+    font-size: 1rem;
     text-transform: uppercase;
     transition: var(--transition);
     -webkit-transition: var(--transition);
@@ -152,6 +161,83 @@ nav .list-content ul form .btn-search i {
 nav .list-content ul form .btn-search i:hover {
     color: var(--main-color);
     background-color: #eeeeee5e;
+}
+
+.bar {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.bar i {
+    color: var(--background-color);
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.bar .bar-icon {
+    width: fit-content;
+}
+
+.bar .bar-icon:hover i {
+    background-color: #eeeeee5e;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.bar:hover .bar-content {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .bar {
+        display: block;
+    }
+}
+
+.bar .bar-content {
+    padding: 15px 10px;
+    padding-left: 0;
+    display: none;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.bar .bar-content ul li {
+    padding: 5px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.bar .bar-content ul li:hover {
+    background-color: #eeeeee5e;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 header .conatiner .head-content {
