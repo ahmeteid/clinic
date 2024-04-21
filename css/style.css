@@ -336,7 +336,7 @@ header .conatiner .head-content .empty-box {
 
 .departments .boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
 }
 
@@ -395,3 +395,56 @@ header .conatiner .head-content .empty-box {
 }
 
 /* End Departments */
+
+/* Start About Us */
+.about-us {
+    margin-bottom: 90px;
+}
+
+.about-us .conatiner {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .about-us .conatiner {
+        flex-direction: column;
+    }
+}
+
+.about-us .conatiner .about-image {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .about-us .conatiner .about-image {
+        margin-bottom: 50px;
+    }
+}
+
+.about-us .conatiner .about-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.about-us .conatiner .about-info {
+    flex: 1;
+    margin-left: 10px;
+    text-align: start;
+}
+
+.about-us .conatiner .about-info .main-title {
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.about-us .conatiner .about-info .about-btn {
+    margin-top: 30px;
+}
+
+/* End About Us */
