@@ -601,3 +601,100 @@ header .conatiner .head-content .empty-box {
 }
 
 /* End Our Doctors */
+
+/* Start Location */
+.get-in {
+    margin-top: 80px;
+    background-color: var(--background-color);
+}
+
+.get-in .main-title {
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.get-in .conatiner .row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media(max-width: 767px) {
+    .get-in .conatiner .row {
+        flex-direction: column;
+    }
+}
+
+.get-in .conatiner .row .col {
+    flex: 1;
+}
+
+.get-in .conatiner .row .col [type="text"],
+.get-in .conatiner .row .col [type="tel"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 45%;
+    background-color: #cdcdcd;
+}
+
+.get-in .conatiner .row .col [type="tel"]::placeholder,
+.get-in .conatiner .row .col [type="text"]::placeholder,
+.get-in .conatiner .row .col [type="email"]::placeholder,
+.get-in .conatiner .row .col textarea::placeholder {
+    text-transform: capitalize;
+}
+
+.get-in .conatiner .row .col [type="tel"] {
+    margin-left: 10px;
+}
+
+.get-in .conatiner .row .col [type="email"],
+.get-in .conatiner .row .col textarea {
+    display: block;
+    width: 92%;
+    background-color: #cdcdcd;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.get-in .conatiner .row .col [type="submit"] {
+    width: 92%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.get-in .conatiner .row .col [type="submit"]:hover {
+    color: var(--main-color);
+    background-color: var(--background-color);
+    outline: 1px solid var(--main-color);
+}
+
+.get-in .conatiner .row .col iframe {
+    width: 100%;
+    height: 348px;
+}
+
+/* End Location */
