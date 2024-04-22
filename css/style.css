@@ -89,7 +89,11 @@ header .conatiner {
 nav {
     display: flex;
     align-items: center;
-    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 100%;
 }
 
 nav .logo {
@@ -178,7 +182,7 @@ nav .list-content ul form .btn-search i:hover {
     z-index: 1;
     display: none;
     position: absolute;
-    top: 10px;
+    top: 2px;
     right: 10px;
 }
 
@@ -225,12 +229,17 @@ nav .list-content ul form .btn-search i:hover {
 .bar .bar-content {
     padding: 15px 10px;
     padding-left: 0;
+    background-color: var(--main-color);
     display: none;
     transition: var(--transition);
     -webkit-transition: var(--transition);
     -moz-transition: var(--transition);
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
+}
+
+.bar .bar-content ul {
+    padding: 0 5px;
 }
 
 .bar .bar-content ul li {
@@ -448,3 +457,147 @@ header .conatiner .head-content .empty-box {
 }
 
 /* End About Us */
+
+/* Start Our Doctors */
+.our-doctors {
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.our-doctors .doctors-info .main-title {
+    color: var(--background-color);
+}
+
+.our-doctors .doctors-info p {
+    color: var(--background-color);
+}
+
+.our-doctors .doctord-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .our-doctors .doctord-cards {
+        margin-left: -5px;
+    }
+}
+
+.our-doctors .conatiner .doctord-cards .card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+.our-doctors .conatiner .doctord-cards .card .image img {
+    max-width: 100%;
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name {
+    position: relative;
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .content-icons {
+    background-color: var(--background-color);
+    position: absolute;
+    left: 30%;
+    bottom: -250%;
+    z-index: -1;
+    opacity: 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.our-doctors .conatiner .doctord-cards .card:hover .doctor-name .content-icons {
+    bottom: 100%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .content-icons i {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .content-icons i:hover {
+    color: #3bb27f;
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .text {
+    margin: 30px 0;
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .text h5 {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.our-doctors .conatiner .doctord-cards .card .doctor-name .text p {
+    text-transform: capitalize;
+    font-size: 1rem;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.our-doctors .conatiner .doctors-btn {
+    margin: 30px 0 50px 0;
+}
+
+.our-doctors .conatiner .doctors-btn .main-btn {
+    position: relative;
+    background-color: #1bb472;
+    color: var(--background-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.our-doctors .conatiner .doctors-btn {
+    border: none;
+    outline: none;
+}
+
+.our-doctors .conatiner .doctors-btn .main-btn:hover {
+    outline: 1px solid #3bb27f;
+    background-color: var(--main-color);
+}
+
+.our-doctors .conatiner .doctors-btn .main-btn:hover a {
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+}
+
+/* End Our Doctors */
