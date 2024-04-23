@@ -788,6 +788,58 @@ header .conatiner .head-content .empty-box {
 
 /* End Testimonial */
 
+/* Start Download Button */
+.download-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    animation: move-up 5s linear infinite;
+    -webkit-animation: move-up 5s linear infinite;
+}
+
+.download-btn a i {
+    background-color: #1bb472;
+    color: var(--background-color);
+    padding: 20px 20px;
+    font-size: 1.50rem;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.download-btn a:hover i {
+    color: #1bb472;
+    background-color: var(--background-color);
+    padding: 30px 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@keyframes move-up {
+
+    0%,
+    100% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+}
+
+/* End Download Button */
+
 /* Start Footer */
 footer {
     background-color: var(--main-color);
